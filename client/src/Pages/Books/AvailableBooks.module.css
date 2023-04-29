@@ -1,0 +1,19 @@
+.cards ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+  }
+  
+  .books-item {
+    width: calc((100% / 4) - 6px);
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .books-item {
+      width: calc((100% / 2) - 6px);
+    }
+  }
+  
