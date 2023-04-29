@@ -1,0 +1,25 @@
+.Input {
+    margin-bottom: 1rem;
+    width: 40px;
+  }
+  
+  .Input label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .Input input {
+    font: inherit;
+    padding: 0.35rem 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .Input input:focus {
+    outline: none;
+    border-color: #4b6aff;
+    box-shadow: 0 0 4px rgba(75, 106, 255, 0.25);
+  }
+  
