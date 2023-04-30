@@ -19,9 +19,11 @@ function App() {
     <CartProvider>
       {cartIsShown&&<Cart onClose={hideCartHandler}/>}
       <Navbar onShowCart={showCartHandler}/>
+      <Home/>
       <main>
         <Books/>
       </main>
+      
     </CartProvider>
   )
 }
