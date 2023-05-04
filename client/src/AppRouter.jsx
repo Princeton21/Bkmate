@@ -1,10 +1,10 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import SellForm from "./Components/SellForm/SellForm";
 import Home from "./Pages/Home/Home";
 import BookSingle from "./Pages/Book/BookSingle";
 import NotFound from "./Pages/NotFound/NotFound";
 import Profile from "./Pages/Profile/Profile";
-import { Routes, Route } from "react-router-dom";
 const AppRouter = () => {
   return (
     <>
