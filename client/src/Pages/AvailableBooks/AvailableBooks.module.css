@@ -1,0 +1,32 @@
+.allBooks{
+    display: flex;
+    flex-direction: column;
+    background-color: #E3B635;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+}
+
+.title{
+    text-align: center;
+    background: #FAEFE3;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100px;
+    padding: 20px;
+}
+
+
+
+.sell{
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #FAEFE3;
+    padding: 50px;
+    text-align: center;
+    margin-top: 10px;
+    size: 3rem;
+}
+
+
