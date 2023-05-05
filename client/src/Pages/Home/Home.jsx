@@ -1,5 +1,5 @@
 import React from 'react'
-import mainimg from '../../../public/assets/Group 173.png'
+import mainimg from "../../assets/Group 173.png";
 import classes from './Home.module.css'
 import { Container, Typography, Stack, Grid, Box ,useMediaQuery} from "@mui/material";
 
