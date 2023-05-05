@@ -1,0 +1,17 @@
+.books{
+    display: flex;
+    background: #FAEFE3;
+    gap: 8px;
+    padding: 30px;
+
+}
+
+.dept{
+    font-family: Zilla Slab;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.bookName{
+    size: 1rem;
+}
