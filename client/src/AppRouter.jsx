@@ -5,6 +5,8 @@ import Home from "./Pages/Home/Home";
 import BookSingle from "./Pages/Book/BookSingle";
 import NotFound from "./Pages/NotFound/NotFound";
 import Profile from "./Pages/Profile/Profile";
+import AvailableBooks from "./Pages/AvailableBooks/AvailableBooks";
+
 const AppRouter = () => {
   return (
     <>
@@ -12,6 +14,7 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/post" element={<SellForm />} />
         <Route path="/books/:bookId" element={<BookSingle />} />
+        <Route path="/availablebooks" element={<AvailableBooks />} />
         <Route path="/profile" element={<Profile/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
