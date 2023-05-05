@@ -1,54 +1,158 @@
-.main{
-    overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@700&family=Oswald:wght@200&display=swap");
+
+.home {
+  width: 100vw;
 }
-.main_page{
+.landpara {
+  margin-top: 40px;
+  width: 300px;
+}
+.landing {
+  display: flex;
+  flex-direction: space-between;
+  gap: 20px;
+  background: #faefe3;
+  height: fit-content;
+}
+.landingSvg {
+  height: 400px;
+  margin-right: 0px;
+  margin-left: 25vw;
+  padding: 5px;
+}
+.landingContent {
+  padding: 50px;
+  margin-left: 50px;
+}
+.hrv{
     display: flex;
-    flex-direction: row;
-    padding-top: 60px;
-    
+    margin-left: 30px;
+
 }
-.main_left{
-    flex: 1;
-    width: 50vw;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
+
+.books{
+    display: flex;
+    height: 500px;
+    background: #faefe3;
+    padding: 40px;
+}
+
+.booksCards{
+    display: flex;
+    gap: 2px;
+    padding: 20px;
+}
+
+.btitle{
+    padding: 10px;
     margin-left: 30px;
 }
-.main_right{
-    flex: 1;
-    width: 50vw;
+.crd{
+    width: 100px;
+}
+.btns {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  justify-content: center;
+}
+.sell,
+.buy {
+  background: #e3b635;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  height: 250px;
+  width: 500px;
+  font-family: "zilla slab";
+  box-shadow: 0px 0px 10px 0px rgba(214, 214, 214, 0.75);
+}
+.aboutSvg {
+  height: 400px;
 }
 
-
-.btn{
-    background-color: aqua;
+.about {
+  background: #faefe3;
+  display: flex;
+  gap: 80px;
+  margin-top: 30px;
 }
 
-.s_parent{
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "zilla slab";
+  color: #504e4e;
+}
+span {
+  color: #e3b635;
+}
+
+.aboutRight {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+}
+.github {
+  height: 30px;
+}
+hr {
+  width: 300px;
+
+  border: 1.5px solid #000000;
+  margin-top: 10px;
+}
+
+p {
+  width: 600px;
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+.git {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .landing {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutRight {
     display: flex;
-    flex-direction: row;
-    padding-top: 60px;
-}
-
-.s_left{
-    flex: 1;
-    
+    flex-direction: column;
     align-items: center;
-    background-color: aqua;
-    padding: 60px;
-    margin: 30px;
-
+    justify-content: center;
+    padding: 50px;
+  }
+  .aboutBg {
+    display: none;
+  }
+  p {
+    width: 300px;
+  }
+  .bookL{
+    display: none;
+    max-width: 100vw;
+  }
+    .books{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .crd{
+        height: 80px;
+    }
 }
-
-.s_right{
-    flex: 1;
-    
-    align-items: center;
-    background-color: aquamarine;
-    padding: 60px;
-    margin: 30px;
-}
-
-
-

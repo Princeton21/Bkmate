@@ -1,64 +1,79 @@
-import React from 'react'
-import mainimg from "../../assets/Group 173.png";
-import classes from './Home.module.css'
-import { Container, Typography, Stack, Grid, Box ,useMediaQuery} from "@mui/material";
+import React from "react";
+import classes from "./Home.module.css";
+import about from "../../assets/about.svg";
+import github from "../../assets/github.svg";
+import landing from "../../assets/landing.svg";
+import Card from "../../UI/Card/Card";
 
 const Home = (props) => {
   return (
-    <>
-       <div className={classes.main_page} >
-          <div className={classes.main_left}>
-            
-            <h1>BOOKMATE</h1>
-            <p>First, let’s make sure we serve your areaFirstserve your areaFirst </p>
-            <button type="button" className={classes.btn} >Sell Books</button>
+    <div className={classes.home}>
+      <div className={classes.landing}>
+        <div className={classes.landingContent}>
+          <h1>
+            Book<span>Mate</span>
+          </h1>
+          <hr />
+          <p className={classes.landpara}>
+            A website that helps you buy and sell second hand books. It has chat
+            feature to directly contact with the seller. You can post your ads
+            for selling books as well. There is option to filter and search for
+            the books.
+          </p>
+        </div>
+        <div>
+          <img src={landing} className={classes.landingSvg} />
+        </div>
+      </div>
+
+      <div className={classes.btns}>
+        <button className={classes.buy}>Buy</button>
+        <button className={classes.sell}>Sell</button>
+      </div>
+
+      <div className={classes.books}>
+        <div className={classes.bookL}>
+          <Card className={classes.big}></Card>
+        </div>
+        <div>
+          <h1 className={classes.btitle}>
+            Second Hand<span>Books</span>
+          </h1>
+          <div className={classes.hrv}>
+            <hr />
+            <a>View all</a>
           </div>
-          <div className={classes.main_right}>
-              <img src={mainimg} alt="main image"
-                height="600px"
-                width="500px"
-              />
+          <div className={classes.booksCards}>
+            <Card className={classes.crd}></Card>
+            <Card className={classes.crd}></Card>
+            <Card className={classes.crd}></Card>
           </div>
-       </div> 
-       <div className={classes.s_parent}>
-        <div className={classes.s_left}>sell</div>
-        <div className={classes.s_right}>buy</div>
-       </div>
-      {/* <Box
-      maxWidth="100%"
-      width="100vw"
-      className={classes.main}
-      >
-       <Grid container spacing={4} maxWidth="xl" className={classes.main}>
-          <Grid item xs={12} md={6}
-         >
-          <Stack direction="column">
-          <Typography
-             variant="h5"
-            component="h5">
-              Happy feet, happy savings!
-            </Typography>
-            <Typography
-             variant="h2"
-            component="h1">
-              BOOKMATE
-            </Typography>
-            <Typography
-             variant="body"
-            component="body">
-              Lorem ipsum dolor sit amet consectetur. Sit mattis donec mi bibendum
-integer rutrum nisi. A nec nisl vitae 
-            </Typography>
-            </Stack>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <img src={mainimg} alt="main img"
-              style={{ maxWidth: '100%' }}
-            />
-          </Grid>
-       </Grid>
-       </Box> */}
-    </>
-  )
-}
-export default Home
+        </div>
+      </div>
+
+      <div className={classes.about}>
+        <div className={classes.aboutBg}>
+          <img className={classes.aboutSvg} src={about} />
+        </div>
+
+        <div className={classes.aboutRight}>
+          <h1>
+            Know <span>Us</span>
+          </h1>
+          <hr />
+          <p>
+            A website that helps you buy and sell second hand books. It has chat
+            feature to directly contact with the seller. You can post your ads
+            for selling books as well. There is option to filter and search for
+            the books.
+          </p>
+          <div className={classes.git}>
+            <h5>Loved Our Project ? 🌟</h5>
+            <a href="https://github.com/Princeton21/Bkmate"><img src={github} className={classes.github}/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+export default Home;
