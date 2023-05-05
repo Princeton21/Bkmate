@@ -17,7 +17,7 @@ const connectDB = async () => {
       useUnifiedTopology: true,
     });
     console.log("DB Connected");
-  } catch (err) {
+  }  catch (err) {
     console.log("DB Connection Error: ", err);
   }
 };
@@ -35,11 +35,5 @@ app.listen(port, () => {
   console.log(`Server is running on port: http://localhost:${port}`);
 });
 
-// Routes
-// app.use("/", (req, res) => {
-//   res.json({
-//     message: "Hello from server",
-//   })
-// });
 app.use("/api/", bookRoutes);
 
