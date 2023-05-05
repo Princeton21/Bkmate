@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "9cc7f8d2-6605-4625-9c85-fa6e477e56ed",
+		"name": "Bookmate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17374289"
+	},
+	"item": [
+		{
+			"name": "books",
+			"item": [
+				{
+					"name": "GetAllBooks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddBook",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"bookname\":\"Rich Dad Poor Dad\",\r\n\"publication\":\"robert publications\",\r\n\"price\":900,\r\n\"description\":\"ore wa kaizoku ou ni naru!\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/book/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"book",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSingleBook",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/book/645136b71613e88746659149",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"book",
+								"645136b71613e88746659149"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveBook",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/book/64513b92b5941bc438e0348d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"book",
+								"64513b92b5941bc438e0348d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateBook",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bookname\":\"does the name change\",\r\n    \"publication\":\"xyz publication\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/book/64513d40fe26a9ea2d9cfa83",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"book",
+								"64513d40fe26a9ea2d9cfa83"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
