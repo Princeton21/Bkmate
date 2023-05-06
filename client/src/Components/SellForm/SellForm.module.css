@@ -1,0 +1,46 @@
+/* SellForm.module.css */
+
+.title{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #fff;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.errorMsg, .error {
+    color: red;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+}
+
+.label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
