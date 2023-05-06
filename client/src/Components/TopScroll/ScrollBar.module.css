@@ -1,0 +1,17 @@
+.white {
+    height: .4rem;
+    position: fixed;
+    right: 0;
+    transition: ease-in-out;
+    background: #fff;
+    z-index: 1000;
+}
+
+.bar {
+    height: .4rem;
+    width: 100%;
+    position: fixed;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 2%, rgba(9, 9, 121, 1) 10%, rgba(7, 50, 148, 1) 16%, rgba(6, 75, 165, 1) 24%, rgba(5, 100, 181, 1) 43%, rgba(3, 151, 215, 1) 64%, rgba(1, 188, 239, 1) 84%, rgba(0, 212, 255, 1) 100%);
+    z-index: 1000;
+}

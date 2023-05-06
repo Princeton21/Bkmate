@@ -1,10 +1,15 @@
 import React from "react";
-import classes from "./Button.module.css";
-const Button = (props) => {
+import styles from "./Button.module.css";
+const Button = ({children,onClick,type,bg}) => {
   return (
     <>
-      <button className={classes.button}>
-        <span className={classes.button_content}>{props.title}</span>
+      <button
+        type={type}
+        className={styles.button}
+        onClick={onClick}
+        style={{ backgroundColor: `hsl(${bg}, 100%, 55%)` }}
+      >
+        <span className={styles.button_content}>{children}</span>
       </button>
     </>
   );
